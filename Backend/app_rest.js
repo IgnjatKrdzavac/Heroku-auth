@@ -31,7 +31,7 @@ app.use('/recensions', recensions);
 
 
 
-app.listen({ port: process.env.PORT || 8020 }, async () => {
+app.listen({ port: 8020 }, async () => {
     await sequelize.authenticate();
     console.log("Server rest started");
 });
